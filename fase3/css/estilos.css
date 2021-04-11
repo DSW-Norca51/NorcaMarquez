@@ -1,0 +1,113 @@
+ 
+  body{ 
+      font-family: Poppins, Serif; 
+  } 
+ 
+  .menu_Contenedor{ 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      background-color: rgb(38, 133, 241); 
+      height: 70px; 
+      width: 100%; 
+      border-bottom: 3px solid black; 
+  }  
+
+  .opciones{ 
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+} 
+.temas{ 
+    padding: 0 20px; 
+    font-weight: bold; 
+ 
+ } 
+ .a-tema{ 
+    color: black; 
+} 
+.lis-subtema{ 
+    position: relative; 
+    list-style: none; 
+     text-align: center; 
+ } 
+ .temas .a-tema{ 
+    text-decoration: none; 
+   text-transform: uppercase; 
+   display: flex; 
+   line-height: 70px; 
+   padding: 0 15px; 
+} 
+.autor{ 
+    margin-left: 15px; 
+} 
+.a-tema:hover{ 
+    color: white; 
+} 
+
+
+.subtemas{ 
+    position: absolute; 
+  display: none; 
+   background: rgb(32, 218, 63);     border: none; 
+} 
+.temas:hover .subtemas{ 
+    display: flex; 
+   flex-direction: column; 
+   color:white; 
+   transition: .4ms; 
+} 
+.lis-subtema{ 
+    border-bottom: 2px solid black; 
+   padding: 0 15px; 
+   text-align: center; 
+} 
+
+
+.lis-subtema:hover{ 
+   background-color: #FCF3CF; 
+} 
+.lis-subtema a{ 
+    text-decoration: none; 
+ display: flex; 
+    padding:15px 0; 
+    color: black; 
+   line-height: unset; 
+    white-space: nowrap; 
+} 
+
+header
+{
+    background-color: rgb(98, 224, 140)
+    
+    
+}
+nav{
+    background-color: rgb(182, 218, 23);
+    color: black;
+    padding: 10px;
+}
+section{
+    float: left;
+    width: 70%;
+    background-color: rgb(235, 245, 243);
+    
+}
+aside{
+    float: left;
+    width: 30%;
+    background-color: darkseagreen;
+      
+}
+footer{
+    background-color: rgb(243, 239, 13);
+    color:black;
+    padding: 10px;
+    display: flex;  
+    justify-content: center;
+}
+.contenedor::after{
+    content: "";
+    display: block;
+    clear: both;
+}
